@@ -24,7 +24,10 @@
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
     <link rel="manifest" href="site.webmanifest">
-    <style>
+   
+  <link rel="stylesheet" href="index.css">
+
+   <style>
         .counter-items__item {
             font-family: Arial, sans-serif;
             text-align: center;
@@ -45,11 +48,53 @@
         }
     </style>
     <style>
-        /* .bt{
-            color: white; 
-            margin-top: 28px; padding-left: 70px;
-        } */
+        .smoothscroll.active {
+  color: white;
+  font-weight: bold;
+}
+        
     </style>
+
+    <style>
+       .imageslide {
+    position: relative;
+    overflow: hidden;
+    width: 300px; /* Set your desired width */
+    height: 200px; /* Set your desired height */
+}
+
+.imageslide-container {
+    display: flex;
+    width: 100%;
+    animation: slide 9s infinite;
+}
+
+.imageslide-container img {
+    width: 100%;
+    flex-shrink: 0;
+}
+
+@keyframes slide {
+    0% { transform: translateX(0); }
+    33% { transform: translateX(-100%); }
+    66% { transform: translateX(-200%); }
+    100% { transform: translateX(0); }
+}
+</style>
+
+
+<style>
+    div {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+    }
+
+    div.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 
 </head>
 
@@ -96,7 +141,7 @@
                     <ul class="s-header__menu-links">
                         <li class="current"><a class="smoothscroll" href="#intro">Intro</a></li>
                    
-                        <li><a class="smoothscroll" href="#about">About</a></li>
+                        <li><a  class="smoothscroll" href="#sec">About</a></li>
                         <li><a class="smoothscroll" href="#works">Works</a></li>
                         <li><a class="smoothscroll" href="#footer">Contact</a></li>
                     </ul> <!-- s-header__menu-links -->    
@@ -122,7 +167,7 @@
                         <span style="font-size: 45px; font-family: Arial, Helvetica, sans-serif;">a graphics designer and a web developer
                         base in Port Harcourt,
                         Nigeria.</span>
-                        </h1>                            
+                        </h1> 
 
                         <div class="s-intro__content-btns">
                             <a class="smoothscroll btn" href="#about">More About Me</a>
@@ -186,42 +231,306 @@
         </section> <!-- end s-intro -->
 
 
-        <!-- # about
-        ================================================== -->
+        <div class="imageslide" style="margin-top: 50px; overflow: hidden; width: 100%; height: 400px;">
+            <div class="imageslide-container">
+                <img src="build.png" alt="">
+                <img src="build2.jpg" alt="">
+                <img src="build3.jpg" alt="">
+            </div>
+        </div>
+
+
+        <section >
+            <div id="sec">
+                 <div>
+                <h2 style="font-size: 40px; font-weight: bolder;">About Me.</h2>
+            </div>
+
+            <div>
+                <img src="PORTFOLIO2.jpg" alt="">
+            </div>
+            </div>
+           
+
+        </section>
+       
+        
+       <section id="works" class="s-works target-section">
+           <h2 class="sw">
+            Selected works
+            </h2>
+
+            <div id="flx">
+                <div>
+                    <a href="images/folio/IMG-20240723-WA0023.jpg" class="hh" target="_blank">
+                        <img src="images/folio/IMG-20240723-WA0023.jpg" alt="">
+
+                            <h4>Poster design <br>
+                                <!-- <span style="font-size: large; color: rgb(110, 110, 110);">For advert</span> -->
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="images/folio/debdcf1ed94c4096a8794ca0f740d9a2e99826e3.jpg" class="hh" target="_blank">
+                        <img src="images/folio/debdcf1ed94c4096a8794ca0f740d9a2e99826e3.jpg" alt="">
+
+                            <h4>Product design <br>
+                                <!-- <span style="font-size: large; color: rgb(110, 110, 110);">For social media</span> -->
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+            </div>
+
+            <div id="flx">
+                <div>
+                    <a href="images/folio/Mems-stictches.jpg" class="hh" target="_blank">
+                        <img src="images/folio/Mems-stictches.jpg" alt="">
+
+                            <h4>Branding<br>
+                                <!-- <span style="font-size: large; color: rgb(110, 110, 110);">logo</span> -->
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="images/folio/pay day is tomorrow.png" class="hh" target="_blank">
+                        <img src="images/folio/pay day is tomorrow.png" alt="">
+
+                            <h4>Poster design <br>
+                                <!-- <span style="font-size: large; color: rgb(110, 110, 110);">For social media design</span> -->
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+               
+            </div>
+
+            
+
+            
+
+            <!-- <div id="flx">
+                <div>
+                    <a href="images/folio/IMG-20240723-WA0007.jpg" class="hh" target="_blank">
+                        <img src="images/folio/IMG-20240723-WA0007.jpg" alt="">
+
+                            <h4>Product design <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);"> For Packing</span>
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="images/folio/IMG-20240723-WA0023.jpg" class="hh" target="_blank">
+                        <img src="images/folio/IMG-20240723-WA0023.jpg" alt="">
+
+                            <h4>Poster design <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">For social media</span>
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+            </div>
+
+            <div id="flx">
+                <div>
+                    <a href="images/folio/gudfamalogo3.jpg" class="hh" target="_blank">
+                        <img src="images/folio/gudfamalogo3.jpg" alt="">
+
+                            <h4>Branding <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">Logo</span>
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="images/folio/flyerfor printing.png" class="hh" target="_blank">
+                        <img src="images/folio/flyerfor printing.png" alt="">
+
+                            <h4>Flyer <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">Printable design</span>
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+            </div>
+
+            <div id="flx">
+                <div>
+                    <a href="images/folio/DRE.jpg" class="hh" target="_blank">
+                        <img src="images/folio/DRE.jpg" alt="">
+
+                            <h4>Branding <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">logo</span>
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="images/folio/BONUS GROUP.png" class="hh" target="_blank">
+                        <img src="images/folio/BONUS GROUP.png" alt="">
+
+                            <h4>Poster <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">For social media</span>
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+            </div>
+
+            <div id="flx">
+                <div>
+                    <a href="images/folio/debdcf1ed94c4096a8794ca0f740d9a2e99826e3.jpg" class="hh" target="_blank">
+                        <img src="images/folio/debdcf1ed94c4096a8794ca0f740d9a2e99826e3.jpg" alt="">
+
+                            <h4>Roll-up design <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">Branding design</span>
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="images/folio/CHRIS222.jpg" class="hh" target="_blank">
+                        <img src="images/folio/CHRIS222.jpg" alt="">
+
+                            <h4>Digital painting <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);"></span>
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+            </div> -->
+
+          
+
+
+        </section>
+                   
+
+        <div class="esac">
+            <button><a href="">Click for more</a></button>
+        </div>
+                   
+
+
         <section id="about" class="s-about target-section">
 
             <div class="row s-about__content">
                 <div class="column xl-12">    
                     
-                    <div class="section-header" data-num="01">
-                        <h2 class="text-display-title">About Me.</h2>
-                    </div> <!-- end section-header -->
-
-                    <p class="attention-getter">
-                       <b>As a Graphics Designer</b>  <br> <br>
+                    <div class="section-header" data-num="02">
+                        <h2 class="text-display-title">As web developer.</h2>
+                    </div> 
 
 
-                        As a passionate graphic designer, I blend creativity with technical expertise to bring visual concepts to life. With a keen eye for detail and a deep understanding of design principles, I specialize in creating compelling graphics that captivate and communicate effectively. From branding and logos to digital illustrations, I thrive on transforming ideas into impactful visual experiences. Explore my portfolio to see the diverse range of projects I've had the pleasure of working on. <br> <br>
-                        
-                        
-                        
-                        
-                    </p>
+                    <img src="PORTFOLIO3.jpg" alt="">
+ 
+        </section>
 
-                    <p class="attention-getter">
-                        <b>As a Web Developer</b> <br> <br>
+        <section id="works" style="margin-top: 100px;">
+
+            <h2 class="sw2">
+                Selected works
+                </h2>
+
+            <div id="flx">
+                <div>
+                    <a href="https://www.cashstack.ng" class="hh" target="_blank">
+                        <img src="images/folio/Screenshot (2).png" alt="">
+
+                            <h4> investment site <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">Click For More</span>
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="gudfama.vercel.app" class="hh" target="_blank">
+                        <img src="images/folio/Screenshot (3).png" alt="">
+
+                            <h4>Farm site<br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">Click For More</span>
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+            </div>
+
+            <div id="flx">
+                <div>
+                    <a href="https://adolphtresources.com.ng" class="hh" target="_blank">
+                        <img src="images/folio/Screenshot (4).png" alt="">
+
+                            <h4> Oil & gas site <br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">Click For More</span>
+                            </h4>
+                            
+                           
+                        
+                    </a>
+                   
+                </div>
+                <div>
+                    <a href="https://www.cokellimited.uk" class="hh" target="_blank">
+                        <img src="images/folio/Screenshot (5).png" alt="">
+
+                            <h4>Booking site<br>
+                                <span style="font-size: large; color: rgb(110, 110, 110);">Click For More</span>
+                            </h4>
+                            
+                           
+                        
+                    </a> 
+                </div>
+            </div>
+
+        </section>
+
         
-                        Welcome to my portfolio! I'm a passionate web designer dedicated to creating visually stunning and user-friendly websites. With a keen eye for detail and a commitment to innovative design, I transform ideas into digital experiences that captivate and engage users.
-                        What I Do
-                        •	Responsive Web Design: Crafting websites that look great on any device, ensuring a seamless user experience across all screen sizes.
-                        •	UI/UX Design: Focusing on intuitive navigation and a delightful user journey to enhance usability and satisfaction.
-                        •	Branding & Visual Identity: Developing cohesive visual identities that reflect your brand's personality and values.
-                        •	Content Management: Utilizing modern CMS platforms to create dynamic, easily manageable websites.
-                        My Approach
-                        I believe in a collaborative approach, working closely with clients to understand their vision and goals. By combining creativity with technical expertise, I deliver customized solutions that not only meet but exceed expectations. Whether you're looking to launch a new website or revamp an existing one, I’m here to bring your digital dreams to life.
-                        Let's create something amazing together!
-                    </p>
 
+        <section id="about" class="s-about target-section">
+
+            <div class="row s-about__content" style="margin-bottom: 200px;">
+                <div class="column xl-12">  
+
+                   
                     <div class="grid-list-items s-about__blocks">
 
                         <div class="grid-list-items__item s-about__block">
@@ -241,42 +550,7 @@
                                 </li>
                             </ul>
                         </div> 
-<!-- 
-                        <div class="grid-list-items__item s-about__block">
-                            <h4 class="s-about__block-title">Awards</h4>
-
-                            <ul class="s-about__list">
-                                <li>
-                                    <a href="#0">
-                                        Site Of The Month
-                                        <span>Awwwards — 2023</span>
-                                    </a>                                        
-                                </li>
-                                <li>
-                                    <a href="#0">
-                                        Site Of The Day
-                                        <span>Awwwards — 2023</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0">
-                                        Agency of The Year
-                                        <span>Awwwards — 2022</span>
-                                    </a>
-                                </li>
-                                <li>
-                                    <a href="#0">
-                                        FWA of The Month
-                                        <span>FWA — 2022</span>
-                                    </a>
-                                </li><li>
-                                    <a href="#0">
-                                        Site Of The Month
-                                        <span>Awwwards — 2022</span>
-                                    </a>                                        
-                                </li>
-                            </ul>
-                        </div> end s-about__block -->
+                           
                         
                         <div class="grid-list-items__item s-about__block">
                             <h4 class="s-about__block-title">Skills</h4>
@@ -318,240 +592,6 @@
             </div> <!--end s-about__content -->
             
         </section> <!-- end s-about -->   
-
-
-
-        <!-- # works
-        ================================================== -->
-        <section id="works" class="s-works target-section">
-
-            <div class="row">
-                <div class="column xl-12">
-                    <div class="section-header" data-num="02">
-                        <h2 class="text-display-title">Selected Works.</h2>
-                    </div> <!-- end section-header -->
-                </div>
-            </div>
-
-            <div class="row folio-entries">
-
-                <div class="column entry">
-                    <a href="images/folio/mirian.jpg" class="entry__link glightbox" data-glightbox="title: A fashion flyer; description: .entry__desc-01">
-                        <div class="entry__thumb">
-                         <img src="images/folio/mirian.jpg" alt="" style="height: 600px;">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">A fashion flyer</h4>
-                            <div class="entry__cat">visual Design</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-01">
-                        <p>
-                        <a href="https://www.facebook.com/Bobsgraphics21?mibextid=ZbWKwL">Project Link</a>.
-                        </p>
-                    </div>
-                </div> 
-
-                <div class="column entry">
-                    <a href="images/folio/IMG-20240723-WA0010.jpg" class="entry__link glightbox" data-glightbox="title: Brand Logo; description: .entry__desc-02">
-                        <div class="entry__thumb">
-                        <img src="images/folio/IMG-20240723-WA0010.jpg" alt="" style="height: 700px;">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Brand Logo</h4>
-                            <div class="entry__cat">Product Design</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-02">
-                        <p>
-                        <a href="https://www.facebook.com/Bobsgraphics21?mibextid=ZbWKwL">Project Link</a>.
-                        </p>
-                    </div>
-                </div> <!-- entry -->
-
-                <div class="column entry">
-                    <a href="images/folio/CHRIS222.jpg" class="entry__link glightbox" data-glightbox="title: Digital paint; description: .entry__desc-03">
-                        <div class="entry__thumb">
-                            <img src="images/folio/CHRIS222.jpg" alt="" style="height: 700px; width: 700px;">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Digital paint</h4>
-                            <div class="entry__cat">visual Art</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-03">
-                        <p>
-                        <a href="https://www.facebook.com/Bobsgraphics21?mibextid=ZbWKwL">Project Link</a>.
-                        </p>
-                    </div>
-                </div> 
-
-                <div class="column entry">
-                    <a href="images/folio/DRE.jpg" class="entry__link glightbox" data-glightbox="title:Brand Logo; description: .entry__desc-04">
-                        <div class="entry__thumb">
-                            <img src="images/folio/DRE.jpg"  alt="">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Brand Logo</h4>
-                            <div class="entry__cat">Product Design</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-04">
-                        <p>
-                        <a href="https://www.facebook.com/Bobsgraphics21?mibextid=ZbWKwL">Project Link</a>.
-                        </p>
-                    </div>
-                </div> 
-
-                <div class="column entry">
-                    <a href="images/folio/Screenshot (2).png" class="entry__link glightbox" data-glightbox="title: cashtack; description: .entry__desc-05">
-                        <div class="entry__thumb">
-                            <img src="images/folio/Screenshot (2).png" alt="" style="height: 600px;">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">cashtack</h4>
-                            <div class="entry__cat">investment site</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-05">
-                        <p>
-                        <a href="https://www.cashstack.ng/">Project Link</a>.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="column entry">
-                    <a href="images/folio/Screenshot (5).png" class="entry__link glightbox" data-glightbox="title:cokellimited ; description: .entry__desc-06">
-                        <div class="entry__thumb">
-                            <img src="images/folio/Screenshot (5).png" alt="" style="height: 600px;">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">booking site</h4>
-                            <div class="entry__cat">Airport booking site</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-06">
-                        <p>
-                        <a href="https://www.cokellimited.uk/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> 
-
-                <div class="column entry">
-                    <a href="images/folio/Screenshot (4).png" class="entry__link glightbox" data-glightbox="title:Adolphresources ; description: .entry__desc-06">
-                        <div class="entry__thumb">
-                            <img src="images/folio/Screenshot (4).png" alt="" style="height: 600px;">
-                        </div>
-                        <div class="entry__info">
-                            <h4 class="entry__title">Oil & gas site</h4>
-                            <div class="entry__cat">Frontend Design</div>
-                        </div>
-                    </a>
-
-                    <div class="glightbox-desc entry__desc-06">
-                        <p>
-                        <a href="https://www.gudfama.vercel.app/">Project Link</a>.
-                        </p>
-                    </div>
-                </div> 
-
-            </div> 
-
-          
-        </div> 
-         
-            </div> 
-
-        
-
-            
-<!-- 
-
-            <div class="row s-testimonials">
-                <div class="column xl-12">
-
-                    <h3 class="s-testimonials__header">Hear it from My Happy Clients</h3>
-    
-                    <div class="swiper-container s-testimonials__slider">
-    
-                        <div class="swiper-wrapper">
-
-                            <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-02.jpg" alt="Author image" class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>John Rockefeller</strong>
-                                        <span>Standard Oil Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Molestiae incidunt consequatur quis ipsa autem nam sit enim magni. Voluptas tempore rem. 
-                                Explicabo a quaerat sint autem dolore ducimus ut consequatur neque. Nisi dolores quaerat fuga rem nihil nostrum.
-                                Laudantium quia consequatur molestias.
-                                </p>
-                            </div> <!-- end s-testimonials__slide -->
-            
-                            <!-- <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-03.jpg" alt="Author image" class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>Andrew Carnegie</strong>
-                                        <span>Carnegie Steel Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Excepturi nam cupiditate culpa doloremque deleniti repellat. Veniam quos repellat voluptas animi adipisci.
-                                Nisi eaque consequatur. Voluptatem dignissimos ut ducimus accusantium perspiciatis.
-                                Quasi voluptas eius distinctio. Atque eos maxime.
-                                </p>
-                            </div> <!-- end s-testimonials__slide -->
-            
-                            <!-- <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-01.jpg" alt="Author image" class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>John Morgan</strong>
-                                        <span>JP Morgan & Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Repellat dignissimos libero. Qui sed at corrupti expedita voluptas odit. Nihil ea quia nesciunt. Ducimus aut sed ipsam.  
-                                Autem eaque officia cum exercitationem sunt voluptatum accusamus. Quasi voluptas eius distinctio.
-                                Voluptatem dignissimos ut.
-                                </p>
-                            </div>  -->
-    
-                            <!-- <div class="s-testimonials__slide swiper-slide">
-                                <div class="s-testimonials__author">
-                                    <img src="images/avatars/user-06.jpg" alt="Author image" class="s-testimonials__avatar">
-                                    <cite class="s-testimonials__cite">
-                                        <strong>Henry Ford</strong>
-                                        <span>Ford Motor Co.</span>
-                                    </cite>
-                                </div>
-                                <p>
-                                Nunc interdum lacus sit amet orci. Vestibulum dapibus nunc ac augue. Fusce vel dui. In ac felis 
-                                quis tortor malesuada pretium. Curabitur vestibulum aliquam leo. Qui sed at corrupti expedita voluptas odit. 
-                                Nihil ea quia nesciunt. Ducimus aut sed ipsam.
-                                </p>
-                            </div>   --> -->
-        
-                        </div> <!-- end swiper-wrapper -->
-    
-                        <div class="swiper-pagination"></div>
-    
-                    </div> <!-- end swiper-container -->
-    
-                </div> <!-- end column -->
-            </div> <!-- end s-testimonials -->
-
-        </section> <!-- end s-works --> 
 
 
         <!-- # numbers
@@ -755,6 +795,49 @@
                 const counterInterval = setInterval(updateCounter, interval);
             });
         });
+
+        document.querySelectorAll('.smoothscroll').forEach(link => {
+  link.addEventListener('click', function() {
+    // Remove active class from all links
+    document.querySelectorAll('.smoothscroll').forEach(item => item.classList.remove('active'));
+
+    // Add active class to the clicked link
+    this.classList.add('active');
+  });
+});
+
+
+document.querySelector('.imageslide').addEventListener('mouseenter', () => {
+    document.querySelector('.imageslide-container').style.animationPlayState = 'paused';
+});
+
+document.querySelector('.imageslide').addEventListener('mouseleave', () => {
+    document.querySelector('.imageslide-container').style.animationPlayState = 'running';
+});
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+      const sections = document.querySelectorAll('div');
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          } else {
+            entry.target.classList.remove('visible');
+          }
+        });
+      }, {
+        threshold: 0.1
+      });
+
+      sections.forEach(section => {
+        observer.observe(section);
+      });
+    });
+
     </script>
 
 </body>

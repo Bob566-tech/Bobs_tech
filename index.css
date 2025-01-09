@@ -1,0 +1,171 @@
+body{
+    margin: 0;
+}
+.sw{
+    padding-left: 300px;
+    font-size: 50px;
+    /* margin-top: -50px; */
+}
+
+#flx{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    
+    
+}
+
+#flx>div{
+
+    width: 25%;
+  height: 300px; 
+  background-color: black; 
+  margin: 20px;
+  /* display: flex; */
+  border: 1px solid #333;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 6px rgba(6, 121, 253, 0.437);
+}
+
+.hh>h4{
+    display: none;
+    margin-top: -330px;
+    text-align: center;
+    color: white;
+    
+    
+    
+
+}
+
+
+.hh>img{
+    height: 300px;
+    width: 100%;
+}
+.hh {
+    display: inline-block;
+    transition: visibility 0s, opacity 0.3s; 
+    width: 100%;
+    
+    
+    
+   
+  }
+.hh:hover img{
+   visibility: hidden;
+   animation: shake 0.5s;
+   opacity: 0;
+  transform: scale(0.9);
+  pointer-events: none;
+}
+
+.hh:hover h4{
+    display: block;
+    transition: opacity 0.5s, transform 0.5s;
+    padding-top: 100px;
+   
+}
+
+#sec{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.052);
+}
+
+#sec>div>img{
+    width: 1200px;
+}
+
+.sw2{
+    padding-left: 300px;
+    font-size: 50px;
+    /* margin-top: -5px; */
+}
+
+.esac{
+    align-self: center;
+}
+
+.esac button {
+    background-color: #000000; /* Button background color */
+    color: white;             /* Text color */
+    border: none;             /* Remove border */
+    /* padding: 10px 20px;       Add padding */
+    cursor: pointer;          /* Pointer cursor on hover */
+    border-radius: 5px;       /* Rounded corners */
+    transition: all 0.3s ease; /* Smooth transition effect */
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3), -2px -2px 6px rgba(255, 255, 255, 0.5);
+}
+
+/* Button hover effect */
+.esac button:hover {
+    background-color: #ffffff; /* Darker blue on hover */
+    transform: scale(1.05);    /* Slightly increase size on hover */
+    border: 2px solid black;
+}
+
+/* Styling the link inside the button */
+.esac button a {
+    text-decoration: none; /* Remove underline */
+    color: white;        /* Inherit button text color */
+    /* padding-top: -50px; */
+}
+
+/* Optional: Link hover effect (not needed since the button covers hover styling) */
+.esac button a:hover {
+    color: black;
+}
+
+@media screen and (max-width: 768px) {
+    .sw {
+        font-size: 40px; /* Further reduce font size for smaller phones */
+        padding-left: 10px;
+        z-index: 2;
+        margin-top: -50px;
+        padding-left: 70px;
+    }
+
+    .sw2{
+        padding-left: 70px;
+        font-size: 40px;
+        margin-top: -20px;
+    }
+
+    #flx {
+        flex-direction: column; /* Ensure elements stack vertically */
+    }
+
+    #flx > div {
+        width: 50%; /* Full width with small margin */
+        height: 185px; /* Smaller height for compact view */
+        margin: 10px auto; /* Center elements */
+    }
+
+    .hh > h4 {
+        margin-top: -150px; /* Adjust based on new height */
+        font-size: 14px; /* Reduce font size for h4 */
+    }
+
+    .hh > img {
+        height: 150px; /* Match div height */
+    }
+
+    .hh:hover h4 {
+        padding-top: 30px; /* Adjust padding for smaller sizes */
+    }
+
+    #sec>div>img{
+        width: 400px;
+    }
+    
+
+
+}
+
+
+
