@@ -49,53 +49,55 @@
         }
     </style>
     <style>
-        .smoothscroll.active {
-  color: white;
-  font-weight: bold;
-}
+       
+       .smoothscroll.active{
+        color: white;
+        font-weight: bold;
+       }
         
     </style>
 
-    <style>
-       .imageslide {
-    position: relative;
-    overflow: hidden;
-    width: 300px; /* Set your desired width */
-    height: 200px; /* Set your desired height */
-}
 
-.imageslide-container {
-    display: flex;
-    width: 100%;
-    animation: slide 10s infinite;
-}
-
-.imageslide-container img {
-    width: 100%;
-    flex-shrink: 0;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    33% { transform: translateX(-100%); }
-    66% { transform: translateX(-200%); }
-    100% { transform: translateX(0); }
-}
-</style>
-
-
-<style>
-    div {
+  <style>
+       div {
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.7s ease-out, transform 0.7s ease-out;
-    }
+       }
 
-    div.visible {
+        div.visible {
       opacity: 1;
       transform: translateY(0);
-    }
+     }
   </style>
+
+
+<style>
+    .isd {
+        position: relative;
+        overflow: hidden;
+        width: 300px; /* Set your desired width */
+        height: 200px; /* Set your desired height */
+    }
+
+    .isd-container {
+        display: flex;
+        width: 50%; /* Adjust width to accommodate all images */
+        animation: slide 10s infinite;
+    }
+
+    .isd-container img {
+        width: 100%;
+        flex-shrink: 0;
+    }
+
+    @keyframes slide {
+        0% { transform: translateX(0); }
+        33% { transform: translateX(-100%); }
+        66% { transform: translateX(-250%); }
+        100% { transform: translateX(0); }
+    }
+</style>
 
 </head>
 
@@ -165,7 +167,7 @@
                         <div class="s-intro__content-pretitle text-pretitle">Hello</div>
                         <h1 class="s-intro__content-title">
                         I'm SAMUEL <SPan style="font-size: 45px; font-family: Arial, Helvetica, sans-serif;">(BOB'S TECQUE)</SPan> <br>
-                        <span style="font-size: 45px; font-family: Arial, Helvetica, sans-serif;">a graphics designer and a web developer
+                        <span style="font-size: 45px; font-family: Arial, Helvetica, sans-serif;"> A full stack web developer and a graphics designer
                         base in Port Harcourt,
                         Nigeria.</span>
                         </h1> 
@@ -213,12 +215,12 @@
             </ul> <!-- end s-intro__social -->
 
             <div class="s-intro__content-media">                               
-                <img src="images/IMG-20240121-WA0024.png" srcset="images/IMG-20240121-WA0024.png 1x, images/IMG-20240121-WA0024.png 2x" alt="">
+                <img src="BOB'S image.png" srcset=" BOB'S image.png 1x, BOB'S image.png 2x" alt="">
             </div> <!-- s-intro__content-media -->                
 
             <div class="s-intro__btn-download">
                 <a class="btn btn--stroke" href="SAMUEL NEW CV.pdf" target="_blank">Get My CV</a>
-            </div> <!-- end s-intro__btn-download -->
+            </div> 
             
             <div class="s-intro__scroll-down">
                 <a href="#about" class="smoothscroll">
@@ -232,11 +234,11 @@
         </section> <!-- end s-intro -->
 
 
-        <div class="imageslide" style="margin-top: 50px; overflow: hidden; width: 100%; height: 400px;">
-            <div class="imageslide-container">
-                <img src="build.png" alt="">
-                <img src="build2.jpg" alt="">
-                <img src="build3.jpg" alt="">
+        <div class="isd" style="width:100%; height: 300px; margin-top: 100px; overflow: hidden; margin: 20px;">
+            <div class="isd-container">
+                <img src="build.png" alt="Image 1" style="height: 150px;">
+                <img src="build2.jpg" alt="Image 2" style="height: 150px;">
+                <img src="build3.jpg" alt="Image 3" style="height: 150px;">
             </div>
         </div>
 
@@ -769,6 +771,7 @@
     ================================================== -->
     <script src="js/plugins.js"></script>
     <script src="js/main.js"></script>
+    
 
     <script>
             document.addEventListener("DOMContentLoaded", function () {
@@ -808,13 +811,6 @@
 });
 
 
-document.querySelector('.imageslide').addEventListener('mouseenter', () => {
-    document.querySelector('.imageslide-container').style.animationPlayState = 'paused';
-});
-
-document.querySelector('.imageslide').addEventListener('mouseleave', () => {
-    document.querySelector('.imageslide-container').style.animationPlayState = 'running';
-});
 
 
 
@@ -839,7 +835,16 @@ document.addEventListener('DOMContentLoaded', function() {
       });
     });
 
+    document.querySelector('.isd').addEventListener('mouseenter', () => {
+    document.querySelector('.imageslide-container').style.animationPlayState = 'paused';
+});
+
+document.querySelector('.isd').addEventListener('mouseleave', () => {
+    document.querySelector('.isd-container').style.animationPlayState = 'running';
+});
+
     </script>
+
 
 </body>
 </html>

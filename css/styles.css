@@ -3467,15 +3467,15 @@ td:last-child {
 }
 
 .s-intro__content-media img {
-    z-index       : 2;
+    z-index       : -1;
     -o-object-fit : cover;
     object-fit    : cover;
     vertical-align: bottom;
     width         : 100%;
-    height        : 180%;
-    margin        : 0;
+    height        : 900px;
+    margin-top    : 150px;
     padding       : 0;
-    opacity       : 0.4;
+    opacity       : 0.9;
 }
 
 /* --------------------------------------------------------------------
