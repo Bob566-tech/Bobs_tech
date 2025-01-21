@@ -61,24 +61,25 @@
     </style>
 
 
-<!-- <style>
-    div {
-   opacity: 0;
-   transform: translateY(20px);
-   transition: opacity 0.7s ease-out, transform 0.7s ease-out;
+<style>
+    div[data-animate] {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease-out, transform 0.7s ease-out;
     }
 
-     div.visible {
-   opacity: 1;
-   transform: translateY(0);
-  }
-</style> -->
+    div[data-animate].visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
 
 
 </head>
 
 
 <body id="top">
+
 
    
     
@@ -135,7 +136,7 @@
         <section id="intro" class="s-intro target-section">
             
 
-            <div class="row s-intro__content width-sixteen-col">
+            <div  data-animate class="row s-intro__content width-sixteen-col">
                 <div class="column lg-12 s-intro__content-inner grid-block grid-16">
                     
                     <div class="s-intro__content-text">
@@ -193,7 +194,7 @@
         </section> <!-- end s-intro -->
 
 
-        <div class="isd" >
+        <div  data-animate class="isd" >
             <div class="isd-container"  style=" justify-self: center ; margin: 10px; margin-top: 40px; ">
                 <img src="build.png" alt="Image 1">
             </div>
@@ -203,7 +204,7 @@
 
 
         <section >
-            <div id="sec">
+            <div  data-animate id="sec">
                  <div>
                    <h2 style="font-size: 40px; font-weight: bolder;">About Me.</h2>
                  </div>
@@ -217,12 +218,12 @@
         </section>
        
         
-       <section id="works" class="s-works target-section">
+       <section  id="works" class="s-works target-section">
            <h2 class="sw">
             Selected works
             </h2>
 
-            <div id="flx">
+            <div  data-animate id="flx">
                 <div>
                     <a href="images/folio/IMG-20240723-WA0023.jpg" class="hh" target="_blank">
                         <img src="images/folio/IMG-20240723-WA0023.jpg" alt="">
@@ -250,7 +251,7 @@
                 </div>
             </div>
 
-            <div id="flx">
+            <div  data-animate id="flx">
                 <div>
                     <a href="images/folio/Mems-stictches.jpg" class="hh" target="_blank">
                         <img src="images/folio/Mems-stictches.jpg" alt="">
@@ -286,12 +287,12 @@
         </section>
                    
 
-        <div class="esac">
+        <div  data-animate class="esac">
             <button><a href="www.facebook.com/bobchimene.samuelclement?mibextid=ZbWKwL" target="_blank">Click for more</a></button>
         </div>
 
 
-        <div class="isd" >
+        <div  data-animate class="isd" >
             <div class="isd-container" style=" justify-self: center ; margin: 10px; margin-top: 40px;">
                 <img src="build2.jpg" alt="Image 2" >
             </div>
@@ -301,7 +302,7 @@
 
         <section id="about" class="s-about target-section">
 
-            <div class="row s-about__content">
+            <div  data-animate class="row s-about__content">
                 <div class="column xl-12">    
                     
                     <div class="section-header" data-num="02">
@@ -319,7 +320,7 @@
                 Selected works
                 </h2>
 
-            <div id="flx">
+            <div  data-animate id="flx">
                 <div>
                     <a href="https://www.cashstack.ng" class="hh" target="_blank">
                         <img src="images/folio/Screenshot (2).png" alt="">
@@ -347,7 +348,7 @@
                 </div>
             </div>
 
-            <div id="flx">
+            <div  data-animate id="flx">
                 <div>
                     <a href="https://adolphtresources.com.ng" class="hh" target="_blank">
                         <img src="images/folio/Screenshot (4).png" alt="">
@@ -381,7 +382,7 @@
 
         <section id="about" class="s-about target-section">
 
-            <div class="row s-about__content" style="margin-bottom: 200px;">
+            <div  data-animate class="row s-about__content" style="margin-bottom: 200px;">
                 <div class="column xl-12">  
 
                    
@@ -449,7 +450,7 @@
 
 
 
-        <div class="isd">
+        <div  data-animate class="isd">
             <div class="isd-container" style=" justify-self: center ; margin: 10px; margin-top: -150px;">
                 <img src="build3.jpg" alt="Image 3" >
             </div>
@@ -494,7 +495,7 @@
         ================================================== -->
         <footer id="footer" class="s-footer target-section">
 
-            <div class="row">
+            <div  data-animate class="row">
                 <div class="column lg-12">
                     <div class="section-header light-on-dark" data-num="03">
                         <h2 class="text-display-title">Get In Touch.</h2>
@@ -502,7 +503,7 @@
                 </div>
             </div>
 
-            <div class="row s-footer__content">
+            <div  data-animate class="row s-footer__content">
 
                 <div class="column xl-6 md-12 s-footer__block s-footer__about">                    
                     <p class="attention-getter">
@@ -511,7 +512,7 @@
                     </p>               
                 </div> <!-- end section-footer__about -->
 
-                <div class="column xl-6 md-12 s-footer__block s-footer__site-links">
+                <div  data-animate class="column xl-6 md-12 s-footer__block s-footer__site-links">
                     <div class="row">
                         <div class="column xl-4 lg-5 md-6 tab-12">
                             <h5>Follow Me</h5>
@@ -537,7 +538,7 @@
 
 xl-6
 
-            <div class="row s-footer__buttons">
+            <div  data-animate class="row s-footer__buttons">
                
                 <div class="column xl-6 tab-12">
                     <a href="mailto:samuelchimene12@gmail.com" class="btn btn--primary btn--large u-fullwidth">Message Me</a>
@@ -549,7 +550,7 @@ xl-6
             
             </div> <!-- end section-footer__buttons -->              
             
-            <div class="row s-footer__bottom">
+            <div  data-animate class="row s-footer__bottom">
                 
                 <div class="column xl-6 lg-12">
                     <ul class="s-footer__social social-list">
@@ -588,7 +589,7 @@ xl-6
 
             </div> <!-- end section-footer__bottom -->          
 
-            <div class="ss-go-top">
+            <div  data-animate class="ss-go-top">
                 <a class="smoothscroll" title="Back to Top" href="#top">                 
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);transform: msFilter;"><path d="M5.536 21.886a1.004 1.004 0 0 0 1.033-.064l13-9a1 1 0 0 0 0-1.644l-13-9A1 1 0 0 0 5 3v18a1 1 0 0 0 .536.886z"></path></svg>
                 </a>                                
@@ -619,32 +620,72 @@ xl-6
 });
    
 
-document.addEventListener('DOMContentLoaded', function() {
-      const sections = document.querySelectorAll('div');
 
-      const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-          } else {
-            entry.target.classList.remove('visible');
+
+
+    // document.addEventListener("DOMContentLoaded", function () {
+    //         const counters = document.querySelectorAll(".counter-items__item");
+
+    //         counters.forEach(counter => {
+    //             const counterElement = counter.querySelector(".num");
+    //             const targetNumber = parseInt(counter.getAttribute("data-target"), 10);
+    //             let currentNumber = 0;
+    //             const increment = Math.ceil(targetNumber / 100); // Adjust increment based on target
+    //             const interval = 20; // Change interval (ms) for smoother/faster animation
+
+    //             const updateCounter = () => {
+    //                 if (currentNumber < targetNumber) {
+    //                     currentNumber += increment;
+    //                     if (currentNumber > targetNumber) {
+    //                         currentNumber = targetNumber;
+    //                     }
+    //                     counterElement.childNodes[0].nodeValue = currentNumber;
+    //                 } else {
+    //                     clearInterval(counterInterval);
+    //                 }
+    //             };
+
+    //             const counterInterval = setInterval(updateCounter, interval);
+    //         });
+    //     });
+
+
+
+    document.addEventListener('DOMContentLoaded', function () {
+      const sections = document.querySelectorAll('div[data-animate]');
+
+      if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add('visible');
+              } else {
+                entry.target.classList.remove('visible');
+              }
+            });
+          },
+          {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px',
           }
-        });
-      }, {
-        threshold: 0.1
-      });
+        );
 
-      sections.forEach(section => {
-        observer.observe(section);
-      });
+        sections.forEach((section) => {
+          observer.observe(section);
+        });
+      } else {
+        // Fallback: Show all elements if IntersectionObserver is not supported
+        sections.forEach((section) => {
+          section.classList.add('visible');
+        });
+      }
     });
 
-
-
-  
-
-
-
+    // Debugging
+    window.addEventListener('load', () => {
+      console.log('Page loaded');
+    });
 
     </script>
 
