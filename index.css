@@ -167,7 +167,7 @@ body{
 
 
   #sec{
-    margin-top: 70px;
+    margin-top: -70px;
   }
 
 
@@ -175,7 +175,7 @@ body{
 
 
   .isd-container{
-    height: 5px;
+    height: auto;
     width: 100%;
   }
 
