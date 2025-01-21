@@ -75,58 +75,6 @@
 </style>
 
 
-<style>
-    .isd {
-        position: relative;
-        overflow: hidden;
-        width: 100%; /* Make the container responsive */
-        max-width: 300px; /* Limit the maximum width */
-        height: 200px; /* Fixed height */
-        margin: 0 auto; /* Center align */
-    }
-
-    .isd-container {
-        display: flex;
-        width: calc(300px * 3); /* Adjust based on the number of images */
-        animation: slide 10s infinite;
-    }
-
-    .isd-container img {
-        width: 300px; /* Match the individual image width */
-        height: 200px; /* Match the container height */
-        flex-shrink: 0;
-    }
-
-    @keyframes slide {
-        0% { transform: translateX(0); }
-        33% { transform: translateX(-300px); } /* Slide one image width */
-        66% { transform: translateX(-600px); } /* Slide two image widths */
-        100% { transform: translateX(0); } /* Reset to the first image */
-    }
-
-    /* Media query for better mobile responsiveness */
-    @media (max-width: 480px) {
-        .isd {
-            width: 100%; /* Full width on smaller screens */
-            height: auto; /* Allow height to adjust */
-        }
-
-        .isd-container img {
-            width: 100%; /* Scale images to fit container */
-            height: auto; /* Maintain aspect ratio */
-        }
-
-        .isd-container {
-            animation: none; /* Disable animation for debugging on mobile */
-            transform: translateX(0); /* Ensure the content is visible */
-        }
-    }
-</style>
-
-
-  
-
-
 </head>
 
 
@@ -245,11 +193,9 @@
         </section> <!-- end s-intro -->
 
 
-        <div class="isd" style="width:100%; height: 300px; margin-top: 100px; overflow: hidden; margin-top: 50px; align-self: center;">
-            <div class="isd-container">
-                <img src="build.png" alt="Image 1" style="height: 150px; width: 45%;">
-                <img src="build2.jpg" alt="Image 2" style="height: 150px;  width: 45%;">
-                <img src="build3.jpg" alt="Image 3" style="height: 150px;  width: 45%;">
+        <div class="isd" >
+            <div class="isd-container"  style=" justify-self: center ; margin: 10px; margin-top: 40px; ">
+                <img src="build.png" alt="Image 1">
             </div>
         </div>
 
@@ -342,6 +288,13 @@
 
         <div class="esac">
             <button><a href="www.facebook.com/bobchimene.samuelclement?mibextid=ZbWKwL" target="_blank">Click for more</a></button>
+        </div>
+
+
+        <div class="isd" >
+            <div class="isd-container" style=" justify-self: center ; margin: 10px; margin-top: 40px;">
+                <img src="build2.jpg" alt="Image 2" >
+            </div>
         </div>
                    
 
@@ -495,6 +448,14 @@
         </section> <!-- end s-about -->   
 
 
+
+        <div class="isd">
+            <div class="isd-container" style=" justify-self: center ; margin: 10px; margin-top: -150px;">
+                <img src="build3.jpg" alt="Image 3" >
+            </div>
+        </div>
+
+
     
         <!-- <section id="numbers" class="s-numbers">
 
@@ -574,6 +535,7 @@
 
             </div> <!-- end section-footer__content -->
 
+xl-6
 
             <div class="row s-footer__buttons">
                
